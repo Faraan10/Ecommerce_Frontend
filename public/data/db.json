@@ -1,0 +1,204 @@
+{
+    "products":[
+        {
+        "id": 1,
+        "title": "Dyng Light - 2",
+        "price": 6.95,
+        "description": "Survival Horror Game",
+        "category": "PS-5 Games",
+        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81ChC2WlrmL._AC_UF1000,1000_QL80_.jpg",
+        "amount":1
+        
+        },
+        {
+        "id": 2,
+        "title": "Assassin's Creed Valhalla ",
+        "price": 6.3,
+        "description": "Action Game",
+        "category": "PS-5 Games",
+        "image": "https://www.gamejila.com/assets/images/products/2017/19/photo_4baec025-cfdd-4778-9749-c5555f0f259c.jpg",
+        "amount":1
+        
+        },
+        {
+        "id": 3,
+        "title": "FIFA 23",
+        "price": 5.99,
+        "description": "Sports Game",
+        "category": "PS-5 Games",
+        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81pyD0T+C9L.jpg",
+        "amount":1
+        
+        },
+        {
+        "id": 4,
+        "title": "Forza Horizon 5",
+        "price": 5.99,
+        "description": "Racing Game",
+        "category": "PS-5 Games",
+        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/71MGlZZqIzL.jpg",
+        "amount":1
+        
+        },
+        {
+        "id": 5,
+        "title": "God Of War",
+        "price": 6.95,
+        "description": "Action Story Mode Game",
+        "category": "PS-5 Games",
+        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81E5a+Vym-L._AC_UF1000,1000_QL80_.jpg",
+        "amount":1
+        
+        },
+        {
+        "id": 6,
+        "title": "Halo Infinite ",
+        "price": 5.99,
+        "description": "Survival Shooting Game",
+        "category": "PS-5 Games",
+        "image": "https://cdn.k4g.com/files/media/cache/cover_270/cover/4f9ad365c0003e77a81f8e4567cd110b.jpeg",
+        "amount":1
+        
+        },
+        {
+        "id": 7,
+        "title": "Hogwarts Legacy",
+        "price": 9.99,
+        "description": "Open World Action-RPG",
+        "category": "PS-5 Games",
+        "image": "https://rukminim1.flixcart.com/image/300/300/xif0q/physical-game/n/y/a/no-standard-edition-ps5-hogwarts-legacy-single-user-ps5-original-imaghkrphqczyggu.jpeg",
+        "amount":1
+        
+        },
+        {
+        "id": 8,
+        "title": "Spider Man Miles and Morales",
+        "price": 8.99,
+        "description": "Action / Adventure",
+        "category": "PS-5 Games",
+        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/811umGHYORL.jpg",
+        "amount":1
+        
+        },
+        {
+        "id": 9,
+        "title": "PS-5 Console ",
+        "price": 64,
+        "description": "Gaming Console",
+        "category": "PS-5 Console",
+        "image": "https://shopatsc.com/cdn/shop/files/1_15562f4e-6d94-43bb-b9bc-a50562e8c0bd.jpg?v=1695622080",
+        "amount":1
+        
+        },
+        {
+        "id": 10,
+        "title": "X-Box Console",
+        "price": 53,
+        "description": "Gaming Console",
+        "category": "X-Box Series-X Console",
+        "image": "https://rukminim2.flixcart.com/image/850/1000/kfbfr0w0/gamingconsole/h/g/g/rrt-00022-1024-xbox-yes-original-imafvsyhtamawykz.jpeg?q=90",
+        "amount":1
+        
+        },
+        {
+        "id": 11,
+        "title": "Ghost of Tsushima",
+        "price": 7.9,
+        "category": "PS-5 Games",       
+        "description": "Action / Adventure",
+        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/81em1nszXNS._AC_UF350,350_QL50_.jpg",
+        "amount":1
+        
+        },
+        {
+        "id": 12,
+        "title": "Uncharted Legacy",
+        "price": 6.4,
+        "description": "Action / Adventure",
+        "category": "PS-5 Games",
+        "image": "https://m.media-amazon.com/images/W/MEDIAX_792452-T2/images/I/91ug7DBCdaL._AC_UF1000,1000_QL80_.jpg",
+        "amount":1
+        
+        },
+        {
+        "id": 13,
+        "title": "Last Of Us Part-1",
+        "price": 7.3,
+        "description": "Action / Adventure",
+        "category": "PS-5 Games",
+        "image": "https://rukminim2.flixcart.com/image/850/1000/l4ei1e80/physical-game/8/n/7/no-standard-edition-the-last-of-us-part-1-ps5-full-game-ps5-original-imagfbf3wxxqnzh6.jpeg?q=90",
+        "amount":1
+        
+        },
+        {
+        "id": 14,
+        "title": "Evil Dead ",
+        "price": 4.99,
+        "description": "Survival Horror Game",
+        "category": "PS-5 Games",
+        "image": "https://5.imimg.com/data5/SELLER/Default/2022/8/SA/QH/WN/140642735/evil-dead-the-game-ps5-500x500.jpeg",
+        "amount":1
+        
+        },
+        {
+        "id": 15,
+        "title": "Final Fantasy XVI",
+        "price": 5.99,
+        "description": "Action Game",
+        "category": "PS-5 Games",
+        "image": "https://stylecaster.com/wp-content/uploads/2023/11/final-fantasy-16.jpg?w=650",
+        "amount":1
+        
+        },
+        {
+        "id": 16,
+        "title": "Call Of Duty",
+        "price": 4.95,
+        "description": "Survival Shooting Game",
+        "category": "PS-5 Games",
+        "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1603727014-749621_gen_a.jpg?crop=0.714xw:1xh;center,top&resize=980:*",
+        "amount":1
+        
+        },
+        {
+        "id": 17,
+        "title": "Demon's Souls",
+        "price": 9.99,
+        "description": "Action Game",
+        "category": "PS-5 Games",
+        "image": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1603725399-749629_gen_a.jpg?crop=0.712xw:1xh;center,top&resize=980:*",
+        "amount":1
+        
+        },
+        {
+        "id": 18,
+        "title": "Lords of the Fallen",
+        "price": 6.85,
+        "description": "Action Game",
+        "category": "PS-5 Games",
+        "image": "https://www.elgiganten.se/image/dv_web_D1800010021487413/625388/lords-of-the-fallen-ps5--pdp_zoom-3000--pdp_main-540.jpg",
+        "amount":1
+        
+        },
+        {
+        "id": 19,
+        "title": "Mortal Combat",
+        "price": 6.95,
+        "description": "Action Game",
+        "category": "PS-5 Games",
+        "image": "https://s3-ap-southeast-1.amazonaws.com/cdn.gamestheshop.com/ps5/PS5-MKU.jpg",
+        "amount":1
+        
+        },
+        {
+        "id": 20,
+        "title": "Dragon Ball-Z",
+        "price": 11.99,
+        "description": "Action Game",
+        "category": "PS-5 Games",
+        "image": "https://m.media-amazon.com/images/I/71NCVu1C0wL.jpg",
+        "amount":1
+        
+        }
+    ]
+}
