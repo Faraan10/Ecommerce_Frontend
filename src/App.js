@@ -40,19 +40,19 @@ function App() {
     userInfo();
   }, []);
 
-  const handleClick = (item) => {
-    let isPresent = false;
-    cartApi.map((product) => {
-      if (item.id === product.id) isPresent = true;
-    });
-    if (isPresent) {
-      setWarning(true);
-      setTimeout(() => {
-        setWarning(false);
-      }, 2000);
-      return;
-    }
-  };
+  // const handleClick = (item) => {
+  //   let isPresent = false;
+  //   cartApi.map((product) => {
+  //     if (item.id === product.id) isPresent = true;
+  //   });
+  //   if (isPresent) {
+  //     setWarning(true);
+  //     setTimeout(() => {
+  //       setWarning(false);
+  //     }, 2000);
+  //     return;
+  //   }
+  // };
 
   const handleChange = (item, d) => {
     let ind = -1;
