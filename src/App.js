@@ -94,7 +94,7 @@ function App() {
         <Route path="*" element={<NotFound />} />
       </Routes>
       {warning && (
-        <div className="warning">Item is already added to your cart</div>
+        // <div className="warning">Item is already added to your cart</div>
       )}
     </div>
   );
