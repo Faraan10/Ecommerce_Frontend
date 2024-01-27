@@ -15,6 +15,7 @@
     background: url("https://id.sonyentertainmentnetwork.com/id/create_account_ca/435efccc77205cfbc0aa503c7436fd855dc13be6/assets/images/wallpaper.jpg");
     background-size: cover;
   }
+
   .wrapperregister{
     width: 400px;
     background: #fff;
@@ -24,7 +25,7 @@
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     margin-left:35%;
     margin-top: 10px;
-    height:470px !important;
+    height:490px !important;
   }
 
   .wrapperregister h2{

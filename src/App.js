@@ -10,10 +10,10 @@ import NotFound from "./screens/NotFound";
 import { Routes, Route } from "react-router-dom";
 import getUserApi from "./api/GetUserApi";
 import getCartApi from "./api/GetCartApi";
+// import UpdateCartApi from "./api/UpdateCartApi";
 
 function App() {
   const [user, setUser] = useState();
-  // const [cart, setCart] = useState([]);
 
   const [cartApi, setCartApi] = useState([]);
 
@@ -27,8 +27,6 @@ function App() {
   }, []);
   //console.log(cartApi);
 
-  const [warning, setWarning] = useState(true);
-
   const userInfo = async () => {
     const response = await getUserApi();
     setUser(response);
@@ -40,31 +38,17 @@ function App() {
     userInfo();
   }, []);
 
-  // const handleClick = (item) => {
-  //   let isPresent = false;
-  //   cartApi.map((product) => {
-  //     if (item.id === product.id) isPresent = true;
+  // const handleChange = (item, d) => {
+  //   let ind = -1;
+  //   cartApi.map((data, index) => {
+  //     if (data.id === item.id) ind = index;
   //   });
-  //   if (isPresent) {
-  //     setWarning(true);
-  //     setTimeout(() => {
-  //       setWarning(false);
-  //     }, 2000);
-  //     return;
-  //   }
+  //   const tempArr = cartApi;
+  //   tempArr[ind].amount += d;
+
+  //   if (tempArr[ind].amount === 0) tempArr[ind].amount = 1;
+  //   setCartApi([...tempArr]);
   // };
-
-  const handleChange = (item, d) => {
-    let ind = -1;
-    cartApi.map((data, index) => {
-      if (data.id === item.id) ind = index;
-    });
-    const tempArr = cartApi;
-    tempArr[ind].amount += d;
-
-    if (tempArr[ind].amount === 0) tempArr[ind].amount = 1;
-    setCartApi([...tempArr]);
-  };
 
   return (
     <div className="App">
@@ -85,7 +69,7 @@ function App() {
           path="/cart"
           element={
             <Cart
-              handleChange={handleChange}
+              // handleChange={handleChange}
               cartApi={cartApi}
               setCartApi={setCartApi}
             />

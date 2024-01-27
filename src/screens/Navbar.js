@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import { useNavigate } from "react-router-dom";
 
-export default function Navbar({ user, setUser, cart, cartApi }) {
+export default function Navbar({ user, setUser, cartApi }) {
   // const { username, email } = user.authtoken;
   // console.log(user);
   let username, email;
@@ -44,14 +44,17 @@ export default function Navbar({ user, setUser, cart, cartApi }) {
               <li className="nav-item-left">
                 <Link
                   to="/"
-                  className="nav-links hover active"
+                  className="nav-links hover active buttonstyle"
                   aria-current="page"
                 >
                   HOME
                 </Link>
               </li>
               <li className="nav-item-left">
-                <Link to="/products" className="nav-links hover active">
+                <Link
+                  to="/products"
+                  className="nav-links hover active buttonstyle"
+                >
                   PRODUCTS
                 </Link>
               </li>
@@ -63,33 +66,35 @@ export default function Navbar({ user, setUser, cart, cartApi }) {
 
               {/* // start here */}
               {user && user.authtoken && user.authtoken.username && (
-                <div className="dropdown">
-                  <button
-                    className="btn-avatar"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <i className="fa-sharp userlogo fa-solid fa-user fa-2xl"></i>
-                  </button>
-                  <ul className="dropdown-menu">
-                    <li>
-                      <a className="dropdown-items" href="/">
-                        {username}
-                      </a>
-                    </li>
-                    <li>
-                      <a className="dropdown-items" href="/">
-                        {email}
-                      </a>
-                    </li>
-                    <li className="buttonli">
-                      <button className="logoutbutton" onClick={handleLogOut}>
-                        LogOut
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+                <li>
+                  <div className="dropdown">
+                    <button
+                      className="btn-avatar"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i className="fa-sharp userlogo fa-solid fa-user fa-2xl"></i>
+                    </button>
+                    <ul className="dropdown-menu">
+                      <li>
+                        <a className="dropdown-items" href="/">
+                          {username}
+                        </a>
+                      </li>
+                      <li>
+                        <a className="dropdown-items" href="/">
+                          {email}
+                        </a>
+                      </li>
+                      <li className="buttonli">
+                        <button className="logoutbutton" onClick={handleLogOut}>
+                          LogOut
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
               )}
               {/* end here */}
               <li className="nav-items">
@@ -104,13 +109,19 @@ export default function Navbar({ user, setUser, cart, cartApi }) {
               </li>
               {user && user.authtoken && user.authtoken.username ? null : (
                 <li className="nav-items">
-                  <Link to="/login" className="nav-links hover active">
+                  <Link
+                    to="/login"
+                    className="nav-links hover active buttonstyle"
+                  >
                     LOGIN
                   </Link>
                 </li>
               )}
               <li className="nav-items">
-                <Link to="/" className="nav-links margin hover active">
+                <Link
+                  to="/"
+                  className="nav-links margin hover active buttonstyle"
+                >
                   ABOUT
                 </Link>
               </li>

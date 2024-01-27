@@ -15,7 +15,7 @@
 
 .firstimage{
     background-image: url("https://www.techwar.gr/wp-content/uploads/2023/11/%CE%94%CE%B9%CE%AD%CF%81%CF%81%CE%B5%CF%85%CF%83%CE%B5-%CF%84%CE%BF-%CE%AD%CF%84%CE%BF%CF%82-%CE%BA%CF%85%CE%BA%CE%BB%CE%BF%CF%86%CE%BF%CF%81%CE%AF%CE%B1%CF%82-%CF%84%CF%89%CE%BD-%CE%B5%CF%80%CF%8C%CE%BC%CE%B5%CE%BD%CF%89%CE%BD-%CF%84%CE%AF%CF%84%CE%BB%CF%89%CE%BD-%CE%B1%CF%80%CF%8C-%CE%B4%CF%85%CE%BF.jpg");
-    height:120vh;
+    height:100vh;
     width:98.78vw;
     background-size: cover;
 }
@@ -23,6 +23,12 @@
 @media only screen and(max-width:1200px){
     .firstimage{
         width: 98vw !important;
+    }
+}
+
+@media only screen and(max-width:576px){
+    .firstimage{
+        width:100vw !important;
     }
 }
 
@@ -43,6 +49,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media screen and(max-width:576px){
+    .image{
+        height:50vh !important;
+        width:50vw !important;
+    }
 }
 
 
@@ -124,6 +137,19 @@
     margin-bottom:30px;
     border-radius:10px;
 }
+
+@media screen and (max-width:576px){
+    
+    .box{
+        height:600px;
+        width:310px;
+        background-color:midnightblue;
+        margin-left:85px !important;
+        margin-bottom:30px;
+        border-radius:10px;
+        margin-left:24%;
+    }
+    }
 
 
 @media screen and (max-width:655px){
@@ -227,4 +253,33 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.displaytextuncharted{
+    height:220px;
+    width:380px;
+    /* border: 2px solid black; */
+    margin-left:50%;
+}
+
+@media screen and (max-width:1100px){
+    .displaytextuncharted{
+        height:220px;
+        width:380px;
+        /* border: 2px solid black; */
+        margin-left:10%;
+    }
+}
+
+
+.unchartedbutton{
+    border-radius: 20px;
+    height:37px;
+    width:120px;
+    color:white;
+    background-color: #1379e0;
+    border: none;
+    font-weight:600;
+    margin-left:10px;
 }

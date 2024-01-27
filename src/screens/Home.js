@@ -99,7 +99,7 @@ export default function Home() {
         </div>
 
         <div className="container">
-          <div className="displaytext">
+          <div className="displaytextuncharted">
             <p className="spidermanhead">UNCHARTED 4: A Thief's End</p>
             <p className="ptext">
               On the hunt for Captain Henry Avery’s long-lost treasure, Sam and
@@ -112,10 +112,12 @@ export default function Home() {
               <span className="releasespan">Release Date:</span> December 10,
               2023
             </p>
-            <button className="spidermanbutton">Find out more</button>
+            <button className="unchartedbutton">Find out more</button>
           </div>
         </div>
       </div>
+      <br />
+      <br />
       <Footer />
     </div>
   );

@@ -13,7 +13,7 @@ export default function Cart({ handleChange, cartApi, setCartApi }) {
 
   const handlePrice = () => {
     let ans = 0;
-    cartApi.map((item) => (ans += item.amount * item.price));
+    cartApi.map((item) => (ans += item.quantity * item.price));
     setPrice(ans);
   };
 
@@ -55,12 +55,12 @@ export default function Cart({ handleChange, cartApi, setCartApi }) {
                           </div>
                         </th>
                         <div className="flex-column ms-4">
-                          <p className="categoryAlign">{item.category}</p>
+                          <p className="categoryAlign">{item.description}</p>
                         </div>
                         <td className="align-middle">
                           <div className="d-flex flex-row">
                             <button
-                              onClick={() => handleChange(item, -1)}
+                              // onClick={() => handleChange(item, -1)}
                               className="btn btn-link px-2"
                             >
                               <i className="fas fa-minus"></i>
@@ -68,7 +68,7 @@ export default function Cart({ handleChange, cartApi, setCartApi }) {
 
                             <p className="itemamount">{item.quantity}</p>
                             <button
-                              onClick={() => handleChange(item, +1)}
+                              // onClick={() => handleChange(item, +1)}
                               className="btn btn-link"
                             >
                               <i className="fas fa-plus"></i>
