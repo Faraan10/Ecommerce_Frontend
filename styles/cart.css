@@ -1,0 +1,48 @@
+.img-fluid{
+    width:17%;
+}
+
+.bt{
+    margin-right:10px;
+}
+
+.form-control{
+    width:45px;
+}
+
+
+.categoryAlign{
+    margin-top:60px;
+}
+
+.itemamount{
+    margin-top:20%;
+}
+
+.pricebox{
+    margin-left:auto;
+}
+
+
+.fa-trash{
+    color:red;
+    cursor:pointer;
+}
+
+
+.btn1{
+    width:170px;
+    height:50px;
+    border:none;
+    color:white;
+    background-color:#1379e0;
+    border-radius: 3px;
+    transition: ease-out 0.5s;
+    outline:none;
+}
+
+.btn1:hover{
+    box-shadow: inset 170px 0 0 0 #161A30;
+    cursor:pointer;
+    color:white;
+}
