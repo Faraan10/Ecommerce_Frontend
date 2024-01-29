@@ -6,7 +6,51 @@ export default function Home() {
   return (
     <div>
       <div className="homediv">
-        <div className="firstimage">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://www.techwar.gr/wp-content/uploads/2023/11/%CE%94%CE%B9%CE%AD%CF%81%CF%81%CE%B5%CF%85%CF%83%CE%B5-%CF%84%CE%BF-%CE%AD%CF%84%CE%BF%CF%82-%CE%BA%CF%85%CE%BA%CE%BB%CE%BF%CF%86%CE%BF%CF%81%CE%AF%CE%B1%CF%82-%CF%84%CF%89%CE%BD-%CE%B5%CF%80%CF%8C%CE%BC%CE%B5%CE%BD%CF%89%CE%BD-%CF%84%CE%AF%CF%84%CE%BB%CF%89%CE%BD-%CE%B1%CF%80%CF%8C-%CE%B4%CF%85%CE%BF.jpg"
+                class="d-block w-100"
+                alt="first"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://4kwallpapers.com/images/wallpapers/elden-ring-2022-games-pc-games-playstation-4-xbox-series-x-3840x2160-7474.jpg"
+                class="d-block w-100"
+                alt="second"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://www.psu.com/wp/wp-content/uploads/2020/10/horizon-forbidden-west-ps4-ps5-wallpapers-06.jpg"
+                class="d-block w-100"
+                alt="third"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleFade"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div>
           <div className="row">
             <div className="cards"></div>
           </div>
