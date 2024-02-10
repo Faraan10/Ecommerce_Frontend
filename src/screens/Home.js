@@ -86,6 +86,7 @@ export default function Home() {
             <div className="box col-sm-6 sol-md-4 col-lg-3">
               <img
                 src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-games-ghost-of-tsushima-image-block-02-en-14oct21?$600px--t$"
+                alt="ghostoftsushima"
                 className="boximg"
               />
               <p className="boxhead">Ghost of Tsushima Director's Cut</p>
@@ -99,6 +100,7 @@ export default function Home() {
             <div className="box col-sm-6 sol-md-4 col-lg-3">
               <img
                 src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-games-demons-souls-image-block-01-en-28jul21?$600px--t$"
+                alt="demonsouls"
                 className="boximg"
               />
               <p className="boxhead">Demon's Souls</p>
@@ -111,6 +113,7 @@ export default function Home() {
             <div className="box col-sm-6 sol-md-4 col-lg-3">
               <img
                 src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-games-spiderman-miles-morales-image-block-en-26aug22?$600px--t$"
+                alt="spiderman"
                 className="boximg"
               />
               <p className="boxhead">Marvel's Spider Man Miles Morales</p>
@@ -123,6 +126,7 @@ export default function Home() {
             <div className="box col-sm-6 sol-md-4 col-lg-3">
               <img
                 src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-games-horizon-forbidden-west-image-block-01-en-28jul21?$600px--t$"
+                alt="forbidden west"
                 className="boximg"
               />
               <p className="boxhead">Horizon Forbidden West</p>

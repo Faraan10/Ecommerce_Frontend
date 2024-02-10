@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from "react";
 import "../styles/cart.css";
 import Footer from "./Footer";
+// import updateCartApi from "../api/UpdateCartApi";
 import DeleteCartApi from "../api/DeleteCartApi";
 
 export default function Cart({ handleChange, cartApi, setCartApi }) {
   const [price, setPrice] = useState(0);
+
+  // const updateCart = async (id, quantity) => {
+  //   const response = await updateCartApi(id, quantity);
+  //   setCartApi([...cartApi, response]);
+  //   console.log(response);
+  // };
 
   const deleteCart = async (id) => {
     await DeleteCartApi(id);
@@ -41,7 +48,7 @@ export default function Cart({ handleChange, cartApi, setCartApi }) {
                   </thead>
                   <tbody>
                     {cartApi.map((item) => (
-                      <tr key={item.id}>
+                      <tr key={item._id}>
                         <th scope="row">
                           <div className="d-flex align-items-center">
                             <img
@@ -54,7 +61,7 @@ export default function Cart({ handleChange, cartApi, setCartApi }) {
                             </div>
                           </div>
                         </th>
-                        <div className="flex-column ms-4">
+                        <div className="flex-column">
                           <p className="categoryAlign">{item.description}</p>
                         </div>
                         <td className="align-middle">
@@ -63,7 +70,12 @@ export default function Cart({ handleChange, cartApi, setCartApi }) {
                               // onClick={() => handleChange(item, -1)}
                               className="btn btn-link px-2"
                             >
-                              <i className="fas fa-minus"></i>
+                              <i
+                                className="fas fa-minus"
+                                // onClick={() =>
+                                //   updateCart(item._id, item.quantity)
+                                // }
+                              ></i>
                             </button>
 
                             <p className="itemamount">{item.quantity}</p>

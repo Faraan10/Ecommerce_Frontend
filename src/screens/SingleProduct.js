@@ -17,6 +17,7 @@ export default function SingleProduct({ cartApi, setCartApi }) {
   useEffect(() => {
     getProducts();
   }, []);
+  console.log(products);
 
   const addToCart = async (id) => {
     const response = await PostCartApi(id);
