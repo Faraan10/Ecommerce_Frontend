@@ -24,7 +24,7 @@ export default function Navbar({ user, setUser, cartApi }) {
 		<>
 			<nav className="navbar navbar-expand-lg bg-body-light">
 				<div className="container-fluid">
-					<img src="https://gamenation.in/assets/imgs/logo.png" className="navimage" alt="logo" />
+					<img src="/images/navlogo.png" className="navimage" alt="logo" />
 					<button
 						className="navbar-toggler"
 						type="button"
@@ -60,7 +60,7 @@ export default function Navbar({ user, setUser, cartApi }) {
 								<li>
 									<div className="dropdown">
 										<button className="btn-avatar" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-											<i className="fa-sharp userlogo fa-solid fa-user fa-2xl"></i>
+											<i className="fa-sharp fa-solid fa-user fa-2xl"></i>
 										</button>
 										<ul className="dropdown-menu">
 											<li>
@@ -75,7 +75,7 @@ export default function Navbar({ user, setUser, cartApi }) {
 											</li>
 											<li className="buttonli">
 												<button className="logoutbutton" onClick={handleLogOut}>
-													LogOut
+													Logout
 												</button>
 											</li>
 										</ul>
@@ -88,9 +88,7 @@ export default function Navbar({ user, setUser, cartApi }) {
 									<span className="cartlogo">
 										<i className="fa-sharp fa-solid fa-cart-shopping fa-xl"></i>
 									</span>
-									<span className="spanclass" id="spid">
-										{cartApi.length}
-									</span>
+									<span className="spanclass">{cartApi.length}</span>
 								</Link>
 							</li>
 							{user && user.authtoken && user.authtoken.username ? null : (
@@ -100,8 +98,9 @@ export default function Navbar({ user, setUser, cartApi }) {
 									</Link>
 								</li>
 							)}
+
 							<li className="nav-items">
-								<Link to="/" className="nav-links margin hover active buttonstyle">
+								<Link to="/" className="nav-links margin  active buttonstyle">
 									ABOUT
 								</Link>
 							</li>

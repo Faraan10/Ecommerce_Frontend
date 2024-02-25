@@ -23,12 +23,11 @@
   }
 
   .firstHalf{
-    background-image: url("https://wallpapercave.com/dwp1x/wp2726294.jpg");
+    background-image: url("/public/images/login.jpg");
     height:70vh;
     width:50vw;
     background-repeat: no-repeat;
   }
-
 
   .wrapper{
     position: relative;

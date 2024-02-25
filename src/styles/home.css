@@ -20,7 +20,7 @@
 }
 
 .image{
-    background-image:url("https://gmedia.playstation.com/is/image/SIEPDC/spider-man-2-screenshot-miles-webwing-en-25may23.jpg?$1600px$");
+    background-image:url("/public/images/game1.webp");
     height:93vh;
     width:72vw;
     background-size: contain;
@@ -299,7 +299,7 @@
 }
 
 .image2{
-    background-image:url("https://wallpapers.com/images/featured/uncharted-y5wt54otbfmw8wxy.jpg");
+    background-image:url("/public/images/game2.jpg");
     height:93vh;
     width:73vw;
     background-size:contain;
