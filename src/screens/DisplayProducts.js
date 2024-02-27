@@ -2,12 +2,18 @@ import React from "react";
 import "../styles/displayProducts.css";
 import { Link } from "react-router-dom";
 import PostCart from "../api/PostCartApi";
+import { toast } from "react-toastify";
 
-export default function DisplayProducts({ item, cartApi, setCartApi, user, setUser }) {
+export default function DisplayProducts({ item, cartApi, setCartApi }) {
 	const addCart = async (id) => {
 		const response = await PostCart(id);
 		// console.log(response);
+		if (response.status) {
+			toast.error(response.data.message);
+			return;
+		}
 		setCartApi([...cartApi, response]);
+		toast.success("Item added to the cart");
 	};
 	//console.log(cartApi);
 
