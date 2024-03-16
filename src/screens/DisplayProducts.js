@@ -7,13 +7,18 @@ import { toast } from "react-toastify";
 export default function DisplayProducts({ item, cartApi, setCartApi }) {
 	const addCart = async (id) => {
 		const response = await PostCart(id);
-		// console.log(response);
-		if (response.status) {
+		const token = localStorage.getItem("token");
+		if (response?.status) {
 			toast.error(response.data.message);
 			return;
+		} else if (!response) {
+			//console.log(response);
+			toast.error("Login to Add to Cart");
+			return;
+		} else {
+			token && setCartApi([...cartApi, response]);
+			toast.success("Item added to the cart");
 		}
-		setCartApi([...cartApi, response]);
-		toast.success("Item added to the cart");
 	};
 	//console.log(cartApi);
 

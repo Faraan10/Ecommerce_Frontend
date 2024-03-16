@@ -49,7 +49,7 @@ export default function Home() {
 				<div className="container">
 					<p className="phead">Console-exclusive PS5 games</p>
 					<p className="phead">from PlayStation Studios</p>
-					<div className="image"></div>
+					<div className="image d-block w-100"></div>
 				</div>
 
 				<div className="displaytext">
@@ -112,7 +112,7 @@ export default function Home() {
 				<div className="container">
 					<p className="phead2">More of the best games out now for</p>
 					<p className="phead2_2">PS5</p>
-					<div className="image2"></div>
+					<div className="image2 d-block w-100"></div>
 				</div>
 
 				<div className="container">

@@ -23,8 +23,9 @@ export default function Login() {
 		e.preventDefault();
 
 		const response = await loginApi(data);
-		if (!response.token) {
-			toast.error(response.data.message);
+		if (!response?.token) {
+			toast.error(response?.data?.message);
+			console.log(response);
 			return false;
 		} else navigate("/");
 		// setting token in local storage to access it later
@@ -52,10 +53,6 @@ export default function Login() {
 								onChange={handleChange}
 							/>
 						</div>
-						{/* <div className="policy">
-              <input type="checkbox" />
-              <h3>I accept all terms & condition</h3>
-            </div> */}
 						<div className="input-box button">
 							<input type="Submit" value="Login" />
 						</div>

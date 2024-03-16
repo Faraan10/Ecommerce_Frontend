@@ -20,17 +20,6 @@ export default function Products({ user, setUser, cartApi, setCartApi }) {
 		setLoading(true);
 	}, []);
 
-	// const getProducts = async () => {
-	//   await axios
-	//     .get("http://localhost:3001/products")
-	//     .then((res) => setProducts(res.data))
-	//     .catch((err) => console.log(err));
-	// };
-
-	// useEffect(() => {
-	//   getProducts();
-	// }, []);
-
 	return (
 		<>
 			{loading ? (
@@ -40,7 +29,7 @@ export default function Products({ user, setUser, cartApi, setCartApi }) {
 					<div className="row">
 						{products.length > 0 &&
 							products.map((product) => (
-								<div className="col-sm-6 col-md-4 col-lg-3" key={product.id}>
+								<div className="col-sm-6 col-md-4 col-lg-3" key={product._id}>
 									<DisplayProducts
 										item={product}
 										cartApi={cartApi}

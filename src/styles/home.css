@@ -22,29 +22,15 @@
 .image{
     background-image:url("/public/images/game1.webp");
     height:93vh;
-    width:72vw;
-    background-size: contain;
-    margin-left:60px;
-    margin-top:20px;
-    margin-bottom:20px;
-    background-position: center;
+    width:70vw;
+    background-size:contain;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
 }
-
-@media screen and(max-width:576px){
-    .image{
-        height:50vh !important;
-        width:50vw !important;
-    }
-}
-
-
 
 .displaytext{
     height:220px;
     width:380px;
-    /* border: 2px solid black; */
     margin-left:50%;
 }
 
@@ -52,7 +38,6 @@
     .displaytext{
         height:220px;
         width:380px;
-        /* border: 2px solid black; */
         margin-left:15%;
     }
 }
@@ -61,7 +46,6 @@
     .displaytext{
         height:220px;
         width:380px;
-        /* border: 2px solid black; */
         margin-left:7%;
     }
 }
@@ -70,7 +54,6 @@
     .displaytext{
         height:220px;
         width:380px;
-        /* border: 2px solid black; */
         margin-left:4%;
     }
 }
@@ -303,18 +286,14 @@
     height:93vh;
     width:73vw;
     background-size:contain;
-    margin-left:50px;
-    margin-bottom:20px;
-    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: center;
 }
 
 
 .displaytextuncharted{
     height:220px;
     width:380px;
-    /* border: 2px solid black; */
     margin-left:50%;
 }
 
@@ -322,7 +301,6 @@
     .displaytextuncharted{
         height:220px;
         width:380px;
-        /* border: 2px solid black; */
         margin-left:10%;
     }
 }
@@ -331,7 +309,6 @@
     .displaytextuncharted{
         height:220px;
         width:380px;
-        /* border: 2px solid black; */
         margin-left:4%;
     }
 }
@@ -341,7 +318,6 @@
     .displaytextuncharted{
         height:220px;
         width:380px;
-        /* border: 2px solid black; */
         margin-left:0%;
     }
 }

@@ -120,8 +120,6 @@ export default function Cart({ handleChange, cartApi, setCartApi }) {
 
 								<div className="btn-block btn-lg">
 									<div className="d-flex justify-content-between">
-										{/* <span classNameName="checkout">Checkout ${(Math.round((price+3)*100)/100).toFixed(2)}</span> */}
-										{/* <span classNameName="checkout">${(Math.round((price+3)*100)/100).toFixed(2)}</span> */}
 										<button className="btn1">Checkout ${(Math.round((price + 3) * 100) / 100).toFixed(2)}</button>
 									</div>
 								</div>

@@ -55,7 +55,6 @@ export default function Navbar({ user, setUser, cartApi }) {
 						<ul className="navbar-nav ms-auto">
 							{/* ms-auto is used for setting nav items to right side*/}
 
-							{/* // start here */}
 							{user && user.authtoken && user.authtoken.username && (
 								<li>
 									<div className="dropdown">
@@ -82,7 +81,6 @@ export default function Navbar({ user, setUser, cartApi }) {
 									</div>
 								</li>
 							)}
-							{/* end here */}
 							<li className="nav-items">
 								<Link to="/cart" className="nav-link active">
 									<span className="cartlogo">
@@ -104,11 +102,6 @@ export default function Navbar({ user, setUser, cartApi }) {
 									ABOUT
 								</Link>
 							</li>
-							{/* <li className="nav-item">
-                <Link to="/registration" className="nav-link active">
-                  REGISTER
-                </Link>
-              </li> */}
 						</ul>
 					</div>
 				</div>
