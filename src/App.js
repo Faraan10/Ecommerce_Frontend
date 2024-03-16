@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import Navbar from "./screens/Navbar";
 import Registration from "./screens/Registration";
 import Login from "./screens/Login";
@@ -23,12 +24,10 @@ function App() {
 		const token = localStorage.getItem("token");
 		token && getCart();
 	}, []);
-	//console.log(cartApi);
 
 	const userInfo = async () => {
 		const response = await getUserApi();
 		setUser(response);
-		//console.log(response);
 	};
 
 	useEffect(() => {
@@ -37,6 +36,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<SpeedInsights />
 			<BrowserRouter>
 				<Navbar user={user} setUser={setUser} cartApi={cartApi} />
 				<Routes>

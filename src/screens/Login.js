@@ -25,7 +25,7 @@ export default function Login() {
 		const response = await loginApi(data);
 		if (!response?.token) {
 			toast.error(response?.data?.message);
-			console.log(response);
+			//console.log(response);
 			return false;
 		} else navigate("/");
 		// setting token in local storage to access it later
