@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { IoMdCart } from "react-icons/io";
+import { FaCircleUser } from "react-icons/fa6";
 
 export default function Navbar({ user, setUser, cartApi }) {
 	// const { username, email } = user.authtoken;
@@ -84,7 +86,8 @@ export default function Navbar({ user, setUser, cartApi }) {
 							<li className="nav-items">
 								<Link to="/cart" className="nav-link active">
 									<span className="cartlogo">
-										<i className="fa-sharp fa-solid fa-cart-shopping fa-xl"></i>
+										<IoMdCart style={{ fontSize: "38px" }} />
+										{/* <i className="fa-sharp fa-solid fa-cart-shopping fa-xl"></i> */}
 									</span>
 									<span className="spanclass">{cartApi.length}</span>
 								</Link>
