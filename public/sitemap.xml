@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://themultihub.shop/</loc></url>
-<url><loc>https://themultihub.shop/registration</loc></url>
-<url><loc>https://themultihub.shop/login</loc></url>
-<url><loc>https://themultihub.shop/products</loc></url>
-<url><loc>https://themultihub.shop/products/:id</loc></url>
-<url><loc>https://themultihub.shop/cart</loc></url>
-</urlset>
